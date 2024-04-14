@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de Discos de Vinil</title>
+<style>
+    img{
+        width: 15%;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="C:\MEUS DOCUMENTOS\Documents\catalogovinil-main\Site de Catálogo dos Discos\styles.css">
+</head>
+<body>
+
+<nav id="menuHorizontal">
+    <ul>
+        <li><a href="linkPaginaCatalogo">Catálogo</a></li>
+        <li><a href="linkPaginaInserirDisco">Inserir Disco</a></li>
+    </ul>
+</nav>
+
+   
+<h1>Catálogo de Discos de Vinil</h1>
+
+<!-- Formulário para adicionar um novo disco -->
+<form>
+    <label for="title">Título: </label>
+    <input type="text" id="title" name="title" required><br>
+    <label for="artist">Artista: </label>
+    <input type="text" id="artist" name="artist" required><br>
+    <label for="year">Ano: </label>
+    <input type="number" id="year" name="year" required><br>
+    <label for="image">Imagem: </label>
+    <input type="file" id="image" name="image" accept="image/*" required><br>
+    <label for="songs">Músicas: </label>
+    <textarea id="songs" name="songs" rows="4" cols="50" placeholder="Insira as músicas, uma por linha"></textarea><br>
+    <button type="button" onclick="adicionarDisco()">Adicionar Disco</button>
+</form>
+
+<hr>
+
+<!-- Destaques, só uma ideia que tive, eu achei que ficou bom na página -->
+<section id="destaque">
+    <h2>Discos em Destaque</h2>
+    <div class="recordItem vinilCaixa fonteCaixa">
+        <img src="Pink Floyd.png" alt="Disco em Destaque 1">
+        <div class="recordInfo">
+            <strong>Título:</strong>  The Dark Side Of The Moon (50th Anniversary) (180 Gram Vinyl, Sticker, Anniversary Edition, Remastered, Gatefold LP Jacket)<br>
+            <strong>Artista:</strong> Pink Floyd<br>
+            <strong>Ano:</strong> 2023<br>
+            <h4>1.Speak to Me/Breathe<br>
+                2.On the Run<br>
+                3.Time<br>
+                4.The Great Gig in the Sky<br>
+                5.Money<br>
+                6.Us and Them<br>
+                7.Any Colour You Like<br>
+                8.Brain Damage<br>
+                9.Eclipse<br>
+                10.Comfortably Numb</h4> 
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="The Strokes.png" alt="Disco em Destaque 2">
+        <div class="recordInfo">
+            <strong>Título:</strong>  Is This It<br>
+            <strong>Artista:</strong> The Strokes<br>
+            <strong>Ano:</strong> 2001<br>
+            <h4>1.Is This It<br>
+                2.The Modern Age<br>
+                3.Soma<br>
+                4.Barely Legal<br>
+                5.Someday<br>
+                6.Alone, Together<br>
+                7.Last Nite<br>
+                8.Hard to Explain<br>
+                9.When It Started<br>
+                10.Take It or Leave It</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Linkin Park.png" alt="Disco em Destaque 3">
+        <div class="recordInfo">
+            <strong>Título:</strong>  Hybrid Theory<br>
+            <strong>Artista:</strong> Linkin Park<br>
+            <strong>Ano:</strong> 1999<br>
+            <h4>1.Papercut<br>
+                2.One Step Closer<br>
+                3.With You<br>
+                4.Points of Authority<br>
+                5.Crawling<br>
+                6.Runaway<br>
+                7.By Myself<br>
+                8.In the End<br>
+                9.A Place for My Head<br>
+                10.Forgotten</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+</section>
+
+<section id="destaque">
+    <h2>Discos</h2>
+    <div class="recordItem vinilCaixa">
+        <img src="Daft Punk.png" alt="Disco 1">
+        <div class="recordInfo">
+            <strong>Título:</strong>  Random Access Memories<br>
+            <strong>Artista:</strong> Daft Punk<br>
+            <strong>Ano:</strong> 2013<br>
+            <h4>1.Give Life Back to Music<br>
+                2.The Game of Love<br>
+                3.Giorgio by Moroder<br>
+                4.Within<br>
+                5.Instant Crush (feat. Julian Casablancas)<br>
+                6.Lose Yourself to Dance (feat. Pharrell Williams)<br>
+                7.Touch<br>
+                8.Get Lucky (feat. Pharrell Williams)<br>
+                9.Beyond<br>
+                10.Fragments of Time (feat. Todd Edwards)</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Michael Jakson.png" alt="Disco 2">
+        <div class="recordInfo">
+            <strong>Título:</strong> Thriller <br>
+            <strong>Artista:</strong> Michael Jakson<br>
+            <strong>Ano:</strong> 1982<br>
+            <h4>1.Wanna Be Startin' Somethin'<br>
+                2.Baby Be Mine<br>
+                3.The Girl Is Mine (feat. Paul McCartney)<br>
+                4.Thriller<br>
+                5.Beat It<br>
+                6.Billie Jean<br>
+                7.Human Nature<br>
+                8.P.Y.T. (Pretty Young Thing)<br>
+                9.The Lady in My Life<br>
+                10.Thriller (Instrumental Version)</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Bob Marley.png" alt="Disco 3">
+        <div class="recordInfo">
+            <strong>Título:</strong> Legend [Special Edition]<br>
+            <strong>Artista:</strong> Bob Marley & The Wailers<br>
+            <strong>Ano:</strong> 1984<br>
+            <h4>1.Is This Love<br>
+                2.No Woman, No Cry<br>
+                3.Could You Be Loved<br>
+                4.Three Little Birds<br>
+                5.Buffalo Soldier<br>
+                6.Get Up, Stand Up<br>
+                7.Stir It Up<br>
+                8.One Love/People Get Ready<br>
+                9.I Shot the Sheriff<br>
+                10.Redemption Song</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Tim maia.png" alt="Disco 4">
+        <div class="recordInfo">
+            <strong>Título:</strong> Tim Maia, Tim Maia - 1970 - Série Clássicos Em Vinil<br>
+            <strong>Artista:</strong> Tim Maia<br>
+            <strong>Ano:</strong> 1970<br>
+            <h4>1.Azul da Cor do Mar<br>
+                2.Primavera (Vai Chuva)<br>
+                3.Coroné Antonio Bento<br>
+                4.Padre Cícero<br>
+                5.Cristina<br>
+                6.Eu Amo Você<br>
+                7.Não Quero Dinheiro (Só Quero Amar)<br>
+                8.Preciso Aprender a Ser Só<br>
+                9.Gostava Tanto de Você<br>
+                10.Primavera (Vai Chuva) [Reprise]</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Jorge Ben.png" alt="Disco 5">
+        <div class="recordInfo">
+            <strong>Título:</strong> Jorge Ben, LP África Brasil - Série Clássicos Em Vinil<br>
+            <strong>Artista:</strong> Jorge Ben<br>
+            <strong>Ano:</strong> 1976<br>
+            <h4>1.Ponta de Lança Africano (Umbabarauma)<br>
+                2.Hermes Trismegisto Escreveu<br>
+                3.O Filósofo<br>
+                4.Meus Filhos, Meu Tesouro<br>
+                5.O Dia Que o Sol Declarou o Seu Amor Pela Terra<br>
+                6.Taj Mahal<br>
+                7.Xica da Silva<br>
+                8.Cavaleiro Do Cavalo Imaculado<br>
+                9.Menina Mulher da Pele Preta<br>
+                10.A História de Jorge</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Zumbi.png" alt="Disco 6">
+        <div class="recordInfo">
+            <strong>Título:</strong> Da Lama ao Caos - Série Clássicos em Vinil<br>
+            <strong>Artista:</strong> Chico Science & Nação Zumbi<br>
+            <strong>Ano:</strong> 1994<br>
+            <h4>1.Da Lama ao Caos<br>
+                2.Maracatu Atômico<br>
+                3.A Cidade<br>
+                4.Risoflora<br>
+                5.Banditismo por Uma Questão de Classe<br>
+                6.Salustiano Song<br>
+                7.Coco Dub (Afrociberdelia)<br>
+                8.Meu Maracatu Pesa Uma Tonelada<br>
+                9.Samba Makossa<br>
+                10.Criança de Domingo</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Amy.png" alt="Disco 7">
+        <div class="recordInfo">
+            <strong>Título:</strong> Back To Black<br>
+            <strong>Artista:</strong> WINEHOUSE,AMY<br>
+            <strong>Ano:</strong> 2006<br>
+            <h4>1.Rehab<br>
+                2.You Know I'm No Good<br>
+                3.Back to Black<br>
+                4.Tears Dry on Their Own<br>
+                5.Love Is a Losing Game<br>
+                6.Wake Up Alone<br>
+                7.Me & Mr. Jones<br>
+                8.Just Friends<br>
+                9.Valerie<br>
+                10.He Can Only Hold Her</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Nirvana.png" alt="Disco 8">
+        <div class="recordInfo">
+            <strong>Título:</strong> Nevermind<br>
+            <strong>Artista:</strong> NIRVANA<br>
+            <strong>Ano:</strong> 1991<br>
+            <h4>1.Smells Like Teen Spirit<br>
+                2.Come as You Are<br>
+                3.Lithium<br>
+                4.In Bloom<br>
+                5.Polly<br>
+                6.Territorial Pissings<br>
+                7.Drain You<br>
+                8.Lounge Act<br>
+                9.Stay Away<br>
+                10.Something in the Way</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Toxy.png" alt="Disco 9">
+        <div class="recordInfo">
+            <strong>Título:</strong> Toxicity<br>
+            <strong>Artista:</strong> System Of A Down<br>
+            <strong>Ano:</strong> 2001<br>
+            <h4>1.Toxicity<br>
+                2.Chop Suey!<br>
+                3.ATWA<br>
+                4.Deer Dance<br>
+                5.Aerials<br>
+                6.Science<br>
+                7.Prison Song<br>
+                8.Bounce<br>
+                9.Forest<br>
+                10.Shimmy</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+    <div class="recordItem vinilCaixa">
+        <img src="Charlie.png" alt="Disco 10">
+        <div class="recordInfo">
+            <strong>Título:</strong> Vinil Charlie Brown Jr. - 100% Charlie Brown Jr - Abalando A Sua Fábrica (vermelho)<br>
+            <strong>Artista:</strong> Charlie Brown Jr<br>
+            <strong>Ano:</strong> 2001<br>
+            <h4>1.Proibida Pra Mim (Grazon)<br>
+                2.Papo Reto (Prazer é Sexo, O Resto é Negócio)<br>
+                3.Tudo o Que Ela Gosta de Escutar<br>
+                4.Senhor do Tempo<br>
+                5.Céu Azul<br>
+                6.Meu Novo Mundo<br>
+                7.Só os Loucos Sabem<br>
+                8.Dias de Luta, Dias de Glória<br>
+                9.Lugar ao Sol<br>
+                10.Zóio de Lula</h4>
+            <button class="editButton">Editar</button>
+            <button class="deleteButton">Excluir</button>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!-- Lista de discos existentes -->
+<section>
+    <h2>Discos Novos</h2>
+    <div id="recordList">
+        <!-- é aqui q aparece os discos inseridos pelo usuario ASS:Pedro Paulo-->
+    </div>
+<!-- Inserção dos discos, JS puro -->
+</section>
+
+<!-- Pesquisa de discos -->
+<section id="pesquisa">
+    <h2>Pesquisar Discos</h2>
+    <input type="text" id="searchInput" placeholder="Digite o título ou o nome do artista">
+    <button type="button" onclick="pesquisarDisco()">Pesquisar</button>
+    <ul id="searchResults">
+        <!-- Javascript na mais pura essência -->
+    </ul>
+</section>
+
+<hr>
+
+<footer>
+    <p>&copy; 2024 Catálogo de Discos de Vinil. Todos os direitos reservados.</p>
+</footer>
+
+<script src="C:\MEUS DOCUMENTOS\Documents\catalogovinil-main\Site de Catálogo dos Discos\js\scripts.js"></script>
+
+</body>
+</html>
+
+<!-- O arquivo em java era só um teste que estava fazendo com a edição de discos, como não é minha parte só usei o chat nele, mas achei bom deixar vai que da alguma ideia
+     O arquivo em css também, o que pode ter nele de importante é uma configuração que faz com que os discos sejam inseridos na horizontal na lista em vez de na vertical como padrão
+     A parte de HTML eu fiz vendo tutoriais e de resto completava com o chat o que eu não tinha certeza, ela é bem pequena então foi tranquilo até. -->
